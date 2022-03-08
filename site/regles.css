@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Meteoric;
+    src: url(Meteoric-Bold.ttf);
+}
+
+body{
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #1d0a37;
+
+    animation: fadeInAnimation ease 2s; 
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimation{ 
+    0%
+    { 
+        opacity: 0; 
+    } 
+    100%
+    { 
+        opacity: 1; 
+    }
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+.rect{
+    background-color: #1d0a37;
+    height: 450px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.pregles{
+    font-family: Meteoric;
+    font-size: 100%;
+    margin-block-start: 20%;
+    color: #e04001;
+}
+
+.flexactions{
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+}
+
+.actions{
+    text-decoration: none;
+    color: #e04001;
+    border: solid 10px #57909b00;
+    background-color: rgba(0, 0, 0, 0.384);
+    font-family: Meteoric;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.exit{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -1px;
+}
+
+.flecheexit{
+    width: 50px;
+    height: 50px;
+}

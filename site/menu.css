@@ -1,0 +1,88 @@
+body{
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #1d0a37;
+
+    animation: fadeInAnimation ease 2s; 
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimation{ 
+    0%
+    { 
+        opacity: 0; 
+    } 
+    100%
+    { 
+        opacity: 1; 
+    }
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+.rect{
+    background-color: #1d0a37;
+    height: 450px;
+    width: 400px;
+    border-radius: 5%;
+}
+
+.flexjouer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -25%;
+}
+
+.Jouer{
+    font-family: 'Fjalla One', sans-serif;
+    color: #4d8496;
+    text-decoration: none;
+    font-size: 70px;
+}
+
+.Jouer:hover{
+    transition: 0.7s;
+    color: #b272fa;
+}
+
+.flexregles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+.regles{
+    font-family: 'Fjalla One', sans-serif;
+    color: #4d8496;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.regles:hover{
+    transition: 0.7s;
+    color: #b272fa;
+}
+
+.flexhisto{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+.histo{
+    font-family: 'Fjalla One', sans-serif;
+    color: #4d8496;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.histo:hover{
+    transition: 0.7s;
+    color: #b272fa;
+}

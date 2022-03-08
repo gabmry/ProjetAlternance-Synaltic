@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="jeux.css">
+        <title>AirHockey</title>
+    </head>
+ 
+    <div class="flexbox">
+        <div class="rect"></div>
+        </div>
+
+        <div class="exit">
+            <a class="exit" href="menu.html"><img class="flecheexit" src="exit.png"></a>
+        </div>
+
+        <div id="app">
+                <!--Appel méthode increaseBar pour click sur le bouton-->
+            <button @click="increaseBar">Coder Bien</button>
+
+            <button @click="increaseBar2">coder vite</button>
+
+            <button @click="increaseBar3">Tester</button>
+
+            <button @click="increaseBar4">Abandonner</button>
+        
+                <!--div qui gère juste le contour de la progressBar-->
+            <div class="progressBar">
+                <!--Barre d'avancement-->
+              <div class="percent" :style="{width: widthBar + 'px' }">
+            </div>
+            </div>
+            <div class="progressBar2">
+                <!--Barre d'avancement-->
+            <div class="percent" :style="{width: widthBar2 + 'px' }"></div>
+            </div>
+            </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    widthBar: 0,
+                    widthBar2: 0
+                },
+                methods: {
+                    increaseBar: function() {
+                        var completion = Math.floor(Math.random() * (25 - 1 + 1)) + 1 
+                        var bugger = Math.floor(Math.random() * (5 - 1 + 1)) + 1 
+    
+                        this.widthBar += completion
+                        this.widthBar2 += bugger
+                    },
+
+                    increaseBar2: function() {
+                        var completion = Math.floor(Math.random() * (50 - 1 + 1)) + 1
+                        var bugger = Math.floor(Math.random() * (50 - 1 + 1)) + 1
+
+                        this.widthBar += completion
+                        this.widthBar2 += bugger
+                    },
+
+                    increaseBar3: function() {
+                        var CompletionReload = this.widthBar2
+
+                        this.widthBar += CompletionReload
+                        this.widthBar2 -= CompletionReload
+                    },
+
+                    increaseBar4: function() {
+                        var CompletionReload = this.widthBar
+                        var BuggerReload = this.widthBar2
+
+                        this.widthBar -= CompletionReload
+                        this.widthBar2 -= BuggerReload
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

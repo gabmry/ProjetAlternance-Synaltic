@@ -1,0 +1,77 @@
+body{
+    background-image: url("fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #1d0a37;
+
+    animation: fadeInAnimation ease 2s; 
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnimation{ 
+    0%
+    { 
+        opacity: 0; 
+    } 
+    100%
+    { 
+        opacity: 1; 
+    }
+}
+
+.rect{
+    background-color: #1d0a37;
+    height: 470px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 5%;
+}
+
+.exit{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 29px;
+    margin-left: 1px;
+}
+
+.flecheexit{
+    width: 50px;
+    height: 50px;
+}
+
+#app{
+    margin-top: -470px;
+    margin-left: 100px;
+}
+
+.progressBar {
+    border: solid #a5a8f9;
+    width: 23%;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+   
+  .percent {
+    height: 20px;
+    max-width: 305px;
+    width: 0%;
+    border-radius: 10px;
+    background-color: #f71100
+  }
+
+  .progressBar2 {
+    border: solid #a5a8f9;
+    width: 23%;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+   
+  .percent {
+    
+    height: 20px;
+    width: 0%;
+    border-radius: 10px;
+    background-color: #f71100
+  }
