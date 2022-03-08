@@ -1,1 +1,1 @@
-# ProjetAlternance/Synaltic
+# Synaltic
